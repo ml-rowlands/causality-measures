@@ -1,0 +1,22 @@
+[project]
+name = "causality-measures"
+version = "0.1.0"
+description = "Exact comparison of transfer entropy, Ay-Polani information flow and Janzing causal strength on binary systems"
+readme = "README.md"
+authors = [
+    { name = "ml-rowlands", email = "mrowlands314@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dit>=2.3",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pytest>=9.1.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

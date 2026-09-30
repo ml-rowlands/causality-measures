@@ -1,0 +1,7 @@
+system,parameters,arrow X_t->Y_t+1,imposed S,Lagged MI I(X_t;Y_t+1),Transfer entropy I(Y_t+1;X_t|Y_t),Ay-Polani flow I(X_t->Y_t+1),Ay-Polani flow imposing S,Janzing strength C(X_t->Y_t+1)
+Direct chain (control),noise=0.1,yes,{Y_t},0.5310,0.5310,0.5310,0.5310,0.5310
+"Confounding, staggered lags",strength=0.9,no,{Y_t},0.5471,0.5471,0.0000,0.0000,0.0000
+"...same data, analyst's DAG (Z unobserved)",strength=0.9,yes,{Y_t},0.5471,0.5471,0.5471,0.5471,0.5471
+"XOR synergy, W = Y_t",noise=0,yes,{Y_t},0.0000,1.0000,0.0000,1.0000,1.0000
+"XOR synergy, W = W_t (external)",noise=0,yes,"{Y_t, W_t}",0.0000,0.0000,0.0000,1.0000,1.0000
+Synchronized copy,"persistence=0.95, copy_noise=0",yes,{Y_t},1.0000,0.2864,1.0000,1.0000,1.0000
