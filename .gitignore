@@ -8,3 +8,15 @@ wheels/
 
 # Virtual environments
 .venv
+
+# LaTeX build artifacts (slides/)
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.xdv

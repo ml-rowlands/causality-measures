@@ -230,6 +230,18 @@ causality-measures/
 └── results/
 ```
 
+## Slides
+
+`slides/slides.pdf` is a 37-page Beamer deck presenting these results to
+students with no prior information theory or causal inference. It starts
+with primers on bits and on interventions, then works through the three
+measures and the systems where they disagree. Rebuild it with:
+
+```bash
+uv run experiments/slide_figures.py   # slide-sized figures from results/
+cd slides && tectonic slides.tex      # or: latexmk -xelatex slides.tex
+```
+
 ## References
 
 1. Schreiber, T. (2000). Measuring information transfer. *Phys. Rev. Lett.* 85, 461–464.
